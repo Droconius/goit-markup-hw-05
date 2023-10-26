@@ -57,7 +57,16 @@
     <section class="section-slogan">
       <div class="container slogan">
         <h1 class="slogan-text">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="order">Замовити послугу</button>
+        <button type="button" class="order" data-modal-open>Замовити послугу</button>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+            отримати вичерпні відомості про компанію чи приватну особу.</p>
+          <button data-modal-close class="button-modal-close">
+            <img src=" ./images/close.svg" alt="close" width="16">
+          </button>
+        </div>
       </div>
     </section>
 
@@ -397,6 +406,9 @@
     </div>
 
   </footer>
+
+  <!-- Script modal windows -->
+  <script src="./js/modal.js"></script>
 
 </body>
 
